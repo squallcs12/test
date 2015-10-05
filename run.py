@@ -11,4 +11,4 @@ for branch in range(branchs):
 		os.system("touch %s-%s" % (branch, commit))
 		os.system("git add .")
 		commit_name = " ".join([random.choice(["add", "new", "thing", "to", "current", "branch", "with", "code"]) for x in range(6)])
-		os.system("git commit -m '[f] %s - %s\n\n%s'" % (branch, " ".join(branch_name), commit_name))
+		os.system("git commit -m '[f] %s - %s\n\n%s'" % (" ".join(branch_name), commit_name, branch))
